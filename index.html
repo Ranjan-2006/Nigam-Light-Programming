@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigam Light Programming</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b, #86e3ce, #d4a5a5);
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+}
+header nav {
+    margin: 0;
+    padding: 0;
+}
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: inline-block;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em 0;
+    min-height: calc(100vh - 140px); /* Adjust based on header and footer height */
+    display: flex;
+    flex-direction: column;
+}
+.intro {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.intro h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+.intro p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.dj-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    grid-gap: 1em; /* Add spacing between items */
+    flex: 1; /* This allows the dj-list to take up remaining space */
+    margin-top: auto; /* Aligns the dj-list to the bottom of the container */
+}
+.dj {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1em;
+}
+.dj img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+.dj h2 {
+    margin: 0.5em 0;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .dj-list {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns for larger tablets */
+            }
+        }
+        @media (max-width: 992px) {
+            .dj-list {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns for medium tablets */
+            }
+        }
+        @media (max-width: 768px) {
+            .dj-list {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller tablets and large phones */
+            }
+        }
+        @media (max-width: 480px) {
+            .dj-list {
+                grid-template-columns: 1fr; /* 1 column for mobile phones */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nigam Light Programming</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="consoles.html">Consoles</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <h3>Our Commitment to DJ Light Programming Across Odisha</h3>
+            <p>
+                At Nigam Light Programming, we are dedicated to providing unparalleled DJ light programming services throughout the vibrant state of Odisha. Our extensive experience and skilled team ensure that every event, big or small, is enhanced with captivating and spectacular lighting. We specialize in creating immersive experiences that complement the unique atmosphere of your occasion, whether it's an intimate gathering or a grand celebration.
+                <br><br>
+                We pride ourselves on our ability to deliver bespoke lighting solutions that perfectly match the theme and energy of your event. From weddings to corporate functions and public festivals, our innovative light designs are tailored to make your event unforgettable. Our commitment to excellence and attention to detail guarantees a flawless execution every time.
+                <br><br>
+                Located in the heart of Odisha, we have a deep understanding of the local culture and preferences. This insight allows us to offer services that resonate with our clients and their audiences. With Nigam Light Programming, you can be confident that your event will shine with brilliance and creativity, leaving a lasting impression on all who attend.
+            </p>
+        </div>
+        <h2>Famous DJs and Light Programs</h2>
+        <div class="dj-list">
+            <div class="dj">
+                <img src="ajay_music.jpg" alt="Ajay Music">
+                <h2>Ajay Music</h2>
+                <p>Jajpur</p>
+            </div>
+            <div class="dj">
+                <img src="siba_sakti.jpg" alt="Siba Sakti">
+                <h2>Siba Sakti</h2>
+                <p>Saintala</p>
+            </div>
+            <div class="dj">
+                <img src="maa_tarini.jpg" alt="Maa Tarini Professional">
+                <h2>Maa Tarini Professional</h2>
+                <p>Dhenkanal</p>
+            </div>
+            <div class="dj">
+                <img src="akash.jpg" alt="Akash">
+                <h2>Akash</h2>
+                <p>Pipili</p>
+            </div>
+            <div class="dj">
+                <img src="mkp.jpg" alt="MKP">
+                <h2>MKP</h2>
+                <p>Pipili</p>
+            </div>
+            <div class="dj">
+                <img src="bajarangi.jpg" alt="Bajarangi">
+                <h2>Bajarangi</h2>
+                <p>Dhenkanal</p>
+            </div>
+            <div class="dj">
+                <img src="g_music.jpg" alt="G-Music">
+                <h2>G-Music</h2>
+                <p>Agalpur</p>
+            </div>
+            <div class="dj">
+                <img src="krishna.jpg" alt="Krishna">
+                <h2>Krishna</h2>
+                <p>Dunguripali</p>
+            </div>
+            <div class="dj">
+                <img src="cb_zone.jpg" alt="CB Zone">
+                <h2>CB Zone</h2>
+                <p>Angul</p>
+            </div>
+            <div class="dj">
+                <img src="rashmi_v3.jpg" alt="Rashmi V3">
+                <h2>Rashmi V3</h2>
+                <p>Angul</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
